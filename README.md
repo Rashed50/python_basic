@@ -42,7 +42,7 @@ pip install mysqlclient
 
 ## Add mysql database with python project
 
-Goto you setting.py file and the DATABASES PART REPLACE BY THIS CODE 
+#### Goto you setting.py file and the DATABASES PART REPLACE BY THIS CODE 
 ```
 DATABASES = {
     'default': {
