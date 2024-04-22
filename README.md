@@ -1,4 +1,42 @@
-# Python Basic 
+# Python Basic
+ We assume you have your Django archive and python installed on your computer.
+ First, PATH verification.
+
+On some version of windows (windows 7) you might need to make sure the Path system variable has the path the following C:\Python34\;C:\Python34\Lib\site-packages\django\bin\ in it, of course depending on your Python version.
+Then, extract and install Django.
+
+
+```
+ c:\>cd c:\Django-x.xx
+```
+## Next, install Django by running the following command for which you will need administrative privileges in windows shell "cmd" −
+```
+ c:\Django-x.xx>python setup.py install
+```
+
+## To test your installation, open a command prompt and type the following command −
+
+```
+ c:\>python -c "import django; print(django.get_version())"
+```
+
+
+## If you see the current version of Django printed on screen, then everything is set.
+
+OR
+
+## Launch a "cmd" prompt and type python then −
+
+```
+ c:\> python
+ >>> import django
+ >>> django.VERSION"
+```
+ 
+## Launch a "cmd" prompt and type python then :
+```
+ python
+```
 
 ## Show Python Command :
 ```
