@@ -14,6 +14,12 @@ Then, extract and install Django.
  c:\Django-x.xx>python setup.py install
 ```
 
+You can install install django using command line. Use this command for django install
+
+```
+python -m pip install Django
+```
+
 ## To test your installation, open a command prompt and type the following command −
 
 ```
