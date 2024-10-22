@@ -77,7 +77,7 @@ Here appname is any valid name for python app
 
 ## Create migration 
 ```
-py manage.py makemigrations
+py manage.py makemigrations app_name or module_name
 ```
 ## Run migrations
 ```
@@ -107,6 +107,21 @@ DATABASES = {
         'PORT': '3306',
     }
 }
+```
+
+
+## Install bootstrap in python project
+
+First you have to activate virtual environment if have not activate. then at inside virtual enironment folder type the below command 
+
+```
+pip install django-bootstrap-v5
+```
+
+Next step is to include the bootstrap module in the INSTALLED_APPS list in the file of  settings.py:
+
+```
+bootstrap5
 ```
 
  
