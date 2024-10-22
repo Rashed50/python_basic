@@ -49,10 +49,19 @@ OR
  django-admin
 ```
 
+## Create Virtual Environment
+For creating python project first you have to create virtual environment first. so to create virtual environment first open terminal in a folder then type below command in windows computer.
+Here "dj_virtual_env" is avirtual environment name
+
+```
+py -m venv dj_virtual_env
+```
+
+
 ## Create Project
 
 ```
-django-admin project_name
+django-admin startproject project_name
 ```
 here project_name is your project name. You can use any valid name as a project name.
 
