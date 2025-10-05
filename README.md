@@ -109,6 +109,16 @@ DATABASES = {
 }
 ```
 
+## Create Required Library text file called requirements.txt  
+Make sure your project's virtual environment (venv, env, etc.) is activated. This ensures that pip freeze only lists the packages specific to your project,
+not every Python package installed on your computer.
+Once your virtual environment is active and you are in your project's root directory (where your manage.py file is located), run the following command.
+The > is a shell redirection operator that tells your system to write the output of pip freeze into the specified file.
+
+```
+pip freeze > requirements.txt
+```
+The generated requirements.txt file will contain a list of packages and their pinned versions, like this:
 
 ## Install bootstrap in python project
 
@@ -123,6 +133,96 @@ Next step is to include the bootstrap module in the INSTALLED_APPS list in the f
 ```
 bootstrap5
 ```
+# Django Templates
 
+## 1. Create Vertual Invironments
+
+#### Windows 
+```bash
+py -m venv env
+```
+#### Linux
+```bash
+python3 -m venv env
+```
+
+
+## 2. Activate Virtual Invironments
+
+#### Windows 
+```bash
+env\Scripts\activate
+```
+
+#### Linux
+```bash
+source env/bin/activate
+```
+
+
+
+## 3. Deactivate Virtual Invironments
+
+```bash
+deactivate
+```
+
+
+## 4. Upgrade PIP
+
+```bash
+python.exe -m pip install --upgrade pip
+```
+
+
+
+## 5. Install Requirement Txt Files
+```bash
+pip install -r requirements.txt
+```
+
+
+## 6. Create and Copy .env file
+```bash
+copy .env.example .env
+```
+
+
+## 7. Makemigration
+```bash
+python manage.py makemigrations
+```
+
+
+
+## 8. Migrate
+```bash
+python manage.py migrate
+```
+
+
+
+## 9. Create Superuser
+```bash
+python manage.py createsuperuser
+```
+#### Email:
+```bash
+admin@test.com
+```
+#### Phone Number:
+```bash
+01500000001
+```
+#### Password:
+```bash
+admin
+```
+
+
+## 10. Now can run the Django server
+```bash
+python manage.py runserver
+```
  
 
